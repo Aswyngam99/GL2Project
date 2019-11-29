@@ -32,31 +32,36 @@
                         <Bloom />
                     </effect>
                 </Label>
-                <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="145.0" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="New" textFill="WHITE">
+                <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="135.0" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="New" textFill="WHITE">
                     <font>
                         <Font name="Century Gothic Bold" size="18.0" />
                     </font>
                 </JFXButton>
-                <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="237.0" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="Delete" textFill="WHITE">
+                <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="231.0" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="Delete" textFill="WHITE">
                     <font>
                         <Font name="Century Gothic Bold" size="18.0" />
                     </font>
                 </JFXButton>
-                <MaterialDesignIconView fill="#9dbcda" glyphName="SCHOOL" layoutX="161.0" layoutY="358.0" size="50">
+                <MaterialDesignIconView fill="#9dbcda" glyphName="SCHOOL" layoutX="161.0" layoutY="367.0" size="50">
                     <effect>
                         <Glow />
                     </effect>
                 </MaterialDesignIconView>
-                <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="190.0" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="Edit" textFill="WHITE">
+                <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="183.0" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="Edit" textFill="WHITE">
                     <font>
                         <Font name="Century Gothic Bold" size="18.0" />
                     </font>
                 </JFXButton>
-            <MaterialDesignIconView fill="#6ca3f1" glyphName="LOGOUT" layoutX="27.0" layoutY="375.0" onMouseClicked="#GoLogin" size="30">
+            <MaterialDesignIconView fill="#6ca3f1" glyphName="LOGOUT" layoutX="27.0" layoutY="375.0" size="30">
                <effect>
                   <Bloom />
                </effect>
             </MaterialDesignIconView>
+            <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="279.0" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="List of student" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </JFXButton>
             </children>
         </AnchorPane>
         <TableView layoutX="372.0" prefHeight="400.0" prefWidth="666.0" style="-fx-background-color: #f2ebf0;">
