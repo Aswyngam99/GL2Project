@@ -65,7 +65,7 @@
             </JFXButton>
             </children>
         </AnchorPane>
-        <TableView layoutX="372.0" layoutY="160.0" prefHeight="240.0" prefWidth="666.0" style="-fx-background-color: #f2ebf0;">
+        <TableView layoutX="372.0" layoutY="160.0" prefHeight="240.0" prefWidth="661.0" style="-fx-background-color: #f2ebf0;">
             <columns>
                 <TableColumn prefWidth="363.0" text="Training course" />
                 <TableColumn minWidth="5.0" prefWidth="195.0" text="Instructor" />

@@ -87,7 +87,7 @@
                      </effect></MaterialDesignIconView>
                </graphic>
             </JFXButton>
-            <MaterialDesignIconView fill="#6ca3f1" glyphName="LOGOUT" layoutX="12.0" layoutY="628.0" onMouseClicked="#GoLogin" size="30">
+            <MaterialDesignIconView fill="#6ca3f1" glyphName="LOGOUT" layoutX="27.0" layoutY="622.0" onMouseClicked="#GoLogin" size="30">
                <effect>
                   <Bloom />
                </effect>
