@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="635.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LProfil">
+   <children>
+      <AnchorPane prefHeight="657.0" prefWidth="280.0" style="-fx-background-color: #373538;">
+         <children>
+            <Pane prefHeight="80.0" prefWidth="280.0" style="-fx-background-color: #373538;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" opacity="0.83" prefHeight="26.0" prefWidth="223.0" text="The Koala Network" textFill="#9ebce8">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.97" />
+                     </effect>
+                  </Label>
+                  <MaterialDesignIconView fill="#9ebce8" glyphName="MENU" layoutX="241.0" layoutY="36.0" size="25">
+                     <effect>
+                        <Bloom />
+                     </effect></MaterialDesignIconView>
+               </children>
+            </Pane>
+            <JFXButton contentDisplay="TOP" layoutX="27.0" layoutY="110.0" onAction="#GoTraining" prefHeight="72.0" prefWidth="253.0" style="-fx-background-color: #9F9C99;" text="Training courses" textFill="#615550">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#9ebce8" glyphName="BOOK_OPEN_VARIANT" size="25">
+                     <effect>
+                        <Bloom />
+                     </effect></MaterialDesignIconView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutX="27.0" layoutY="512.0" prefHeight="72.0" prefWidth="253.0" style="-fx-background-color: #9F9C99;" text="Chat" textFill="#615550">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#9ebce8" glyphName="MESSAGE_REPLY_TEXT" size="25">
+                     <effect>
+                        <Bloom />
+                     </effect></MaterialDesignIconView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutY="213.0" prefHeight="72.0" prefWidth="253.0" style="-fx-background-color: #BCBCBE;" text="Wikis" textFill="#615550">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#6ca3f1" glyphName="BOOK_OPEN" size="25">
+                     <effect>
+                        <Bloom />
+                     </effect></MaterialDesignIconView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutX="27.0" layoutY="314.0" prefHeight="72.0" prefWidth="253.0" style="-fx-background-color: #9F9C99;" text="Forum" textFill="#615550">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#9ebce8" glyphName="FORUM" size="25.0">
+                     <effect>
+                        <Bloom />
+                     </effect></MaterialDesignIconView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutY="415.0" prefHeight="72.0" prefWidth="253.0" style="-fx-background-color: #BCBCBE;" text="Poll" textFill="#615550">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#6ca3f1" glyphName="POLL_BOX" size="25">
+                     <effect>
+                        <Bloom />
+                     </effect></MaterialDesignIconView>
+               </graphic>
+            </JFXButton>
+            <MaterialDesignIconView fill="#6ca3f1" glyphName="LOGOUT" layoutX="12.0" layoutY="628.0" onMouseClicked="#GoLogin" size="30">
+               <effect>
+                  <Bloom />
+               </effect>
+            </MaterialDesignIconView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="272.0" prefHeight="650.0" prefWidth="676.0">
+         <children>
+            <AnchorPane prefHeight="657.0" prefWidth="669.0" style="-fx-background-color: #F0EDE5;">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="676.0" style="-fx-background-color: #373538;">
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="676.0" layoutY="-3.0" opacity="0.53" pickOnBounds="true">
+                           <image>
+                              <Image url="@Image/plexus.jpg" />
+                           </image>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="185.0" fitWidth="204.0" layoutX="54.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/loonapix_1574951266125445344.png" />
+                           </image></ImageView>
+                        <MaterialDesignIconView fill="#6ca3f1" glyphName="PLUS_CIRCLE" layoutX="193.0" layoutY="291.0" size="35">
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </MaterialDesignIconView>
+                        <JFXButton layoutX="518.0" layoutY="149.0" text="Edit profile" textFill="#8dc1d3">
+                           <font>
+                              <Font name="Century Gothic" size="18.0" />
+                           </font>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                           <graphic>
+                              <MaterialDesignIconView fill="#6bb5af" glyphName="BORDER_COLOR" size="25" text="">
+                                 <effect>
+                                    <Bloom />
+                                 </effect>
+                              </MaterialDesignIconView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXTextField focusColor="#adb3c6" layoutX="21.0" layoutY="35.0" prefHeight="25.0" prefWidth="280.0" promptText="Search" text="Search" unFocusColor="#619fc3" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="278.0" layoutY="212.0" text="Username">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="278.0" layoutY="251.0" text="Statue">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
