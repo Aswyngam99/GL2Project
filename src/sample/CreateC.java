@@ -8,14 +8,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ListStudent {
-    public void GoFormation(javafx.scene.input.MouseEvent mouseEvent) throws IOException {
+public class CreateC {
+    public void Gocours(javafx.scene.input.MouseEvent mouseEvent) throws IOException {
         //RETURN TO MENU
-        Parent profil = FXMLLoader.load(getClass().getResource("Formation.fxml"));
-        Scene scene3 = new Scene(profil, 1036, 401);
+        Parent cour = FXMLLoader.load(getClass().getResource("Cours.fxml"));
+        Scene scene3 = new Scene(cour);
         Stage window = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
-        window.setX(220);
-        window.setY(50);
         window.setScene(scene3);
         window.show();
     }

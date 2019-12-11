@@ -37,7 +37,7 @@ public class LoginController implements Initializable {
     public void GoLogin(javafx.event.ActionEvent actionEvent) throws IOException {
         //BOTH Student and Instructor
         Parent profil = FXMLLoader.load(getClass().getResource("LProfil.fxml"));
-        Scene scene3 = new Scene(profil, 930, 625);
+        Scene scene3 = new Scene(profil, 930, 630);
         Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         window.setX(220);
         window.setY(50);
