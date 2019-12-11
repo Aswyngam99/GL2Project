@@ -33,7 +33,28 @@ public class LProfil {
         window.setScene(scene2);
         window.show();
     }
-
+    public void GoWiki(javafx.event.ActionEvent actionEvent) throws IOException {
+        // IF IT's an INSTRUCTOR
+        Parent wiki = FXMLLoader.load(getClass().getResource("Wiki.fxml"));
+        Scene scene4 = new Scene(wiki);
+        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene4);
+        window.show();
+        //IF IT's a STUDENT
+        /*Parent wikil = FXMLLoader.load(getClass().getResource("WikiL.fxml"));
+        Scene scene4 = new Scene(wikil);
+        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene4);
+        */window.show();
+    }
+    public void GoForum(javafx.event.ActionEvent actionEvent) throws IOException {
+        // INSTRUCTOR
+        Parent f = FXMLLoader.load(getClass().getResource("Forum.fxml"));
+        Scene scene4 = new Scene(f);
+        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene4);
+        window.show();
+    }
     public void handleClose(MouseEvent mouseEvent) {
         System.exit(0);
     }

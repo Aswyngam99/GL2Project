@@ -54,7 +54,7 @@
                      </effect></MaterialDesignIconView>
                </graphic>
             </JFXButton>
-            <JFXButton contentDisplay="TOP" layoutY="213.0" prefHeight="72.0" prefWidth="253.0" style="-fx-background-color: #BCBCBE;" text="Wikis" textFill="#615550">
+            <JFXButton contentDisplay="TOP" layoutY="213.0" onAction="#GoWiki" prefHeight="72.0" prefWidth="253.0" style="-fx-background-color: #BCBCBE;" text="Wikis" textFill="#615550">
                <font>
                   <Font name="Century Gothic" size="18.0" />
                </font>
@@ -65,7 +65,7 @@
                      </effect></MaterialDesignIconView>
                </graphic>
             </JFXButton>
-            <JFXButton contentDisplay="TOP" layoutX="27.0" layoutY="314.0" prefHeight="72.0" prefWidth="253.0" style="-fx-background-color: #9F9C99;" text="Forum" textFill="#615550">
+            <JFXButton contentDisplay="TOP" layoutX="27.0" layoutY="314.0" onAction="#GoForum" prefHeight="72.0" prefWidth="253.0" style="-fx-background-color: #9F9C99;" text="Forum" textFill="#615550">
                <font>
                   <Font name="Century Gothic" size="18.0" />
                </font>
