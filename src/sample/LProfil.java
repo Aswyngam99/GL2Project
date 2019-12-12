@@ -48,14 +48,35 @@ public class LProfil {
         */window.show();
     }
     public void GoForum(javafx.event.ActionEvent actionEvent) throws IOException {
-        // INSTRUCTOR
+        // BOTH
         Parent f = FXMLLoader.load(getClass().getResource("Forum.fxml"));
         Scene scene4 = new Scene(f);
         Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         window.setScene(scene4);
         window.show();
     }
-    public void handleClose(MouseEvent mouseEvent) {
-        System.exit(0);
+    public void GoChat(javafx.event.ActionEvent actionEvent) throws IOException {
+        // BOTH
+        Parent chat = FXMLLoader.load(getClass().getResource("Chat.fxml"));
+        Scene scene4 = new Scene(chat);
+        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene4);
+        window.show();
+    }
+    public void GoPoll(javafx.event.ActionEvent actionEvent) throws IOException {
+        // BOTH
+        Parent chat = FXMLLoader.load(getClass().getResource("Poll.fxml"));
+        Scene scene4 = new Scene(chat);
+        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene4);
+        window.show();
+    }
+    public void Edit(javafx.event.ActionEvent actionEvent) throws IOException {
+        // BOTH
+        Parent chat = FXMLLoader.load(getClass().getResource("EditProf.fxml"));
+        Scene scene4 = new Scene(chat);
+        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene4);
+        window.show();
     }
 }

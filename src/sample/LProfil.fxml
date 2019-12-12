@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="635.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LProfil">
+<AnchorPane prefHeight="638.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LProfil">
    <children>
       <AnchorPane prefHeight="657.0" prefWidth="280.0" style="-fx-background-color: #373538;">
          <children>
@@ -43,7 +43,7 @@
                      </effect></MaterialDesignIconView>
                </graphic>
             </JFXButton>
-            <JFXButton contentDisplay="TOP" layoutX="27.0" layoutY="512.0" prefHeight="72.0" prefWidth="253.0" style="-fx-background-color: #9F9C99;" text="Chat" textFill="#615550">
+            <JFXButton contentDisplay="TOP" layoutX="27.0" layoutY="512.0" onAction="#GoChat" prefHeight="72.0" prefWidth="253.0" style="-fx-background-color: #9F9C99;" text="Chat" textFill="#615550">
                <font>
                   <Font name="Century Gothic" size="18.0" />
                </font>
@@ -76,7 +76,7 @@
                      </effect></MaterialDesignIconView>
                </graphic>
             </JFXButton>
-            <JFXButton contentDisplay="TOP" layoutY="415.0" prefHeight="72.0" prefWidth="253.0" style="-fx-background-color: #BCBCBE;" text="Poll" textFill="#615550">
+            <JFXButton contentDisplay="TOP" layoutY="415.0" onAction="#GoPoll" prefHeight="72.0" prefWidth="253.0" style="-fx-background-color: #BCBCBE;" text="Poll" textFill="#615550">
                <font>
                   <Font name="Century Gothic" size="18.0" />
                </font>
@@ -98,14 +98,14 @@
          <children>
             <AnchorPane prefHeight="657.0" prefWidth="669.0" style="-fx-background-color: #F0EDE5;">
                <children>
-                  <Pane prefHeight="200.0" prefWidth="676.0" style="-fx-background-color: #373538;">
+                  <Pane prefHeight="200.0" prefWidth="676.0" style="-fx-background-color: #708090;">
                      <children>
-                        <ImageView fitHeight="200.0" fitWidth="676.0" layoutY="-3.0" opacity="0.53" pickOnBounds="true">
+                        <ImageView fitHeight="657.0" fitWidth="676.0" layoutY="-3.0" opacity="0.29" pickOnBounds="true">
                            <image>
-                              <Image url="@Image/plexus.jpg" />
+                              <Image url="@Image/maxresdefault.jpg" />
                            </image>
                            <effect>
-                              <Bloom />
+                              <Bloom threshold="1.0" />
                            </effect>
                         </ImageView>
                         <ImageView fitHeight="185.0" fitWidth="204.0" layoutX="54.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
@@ -117,7 +117,7 @@
                               <Bloom />
                            </effect>
                         </MaterialDesignIconView>
-                        <JFXButton layoutX="518.0" layoutY="149.0" text="Edit profile" textFill="#8dc1d3">
+                        <JFXButton layoutX="518.0" layoutY="149.0" onAction="#Edit" text="Edit profile" textFill="#8dc1d3">
                            <font>
                               <Font name="Century Gothic" size="18.0" />
                            </font>
@@ -132,15 +132,18 @@
                               </MaterialDesignIconView>
                            </graphic>
                         </JFXButton>
-                        <JFXTextField focusColor="#adb3c6" layoutX="21.0" layoutY="35.0" prefHeight="25.0" prefWidth="280.0" promptText="Search" text="Search" unFocusColor="#619fc3" />
+                        <JFXTextField focusColor="#adb3c6" layoutX="21.0" layoutY="35.0" opacity="0.59" prefHeight="25.0" prefWidth="280.0" promptText="Search" style="-fx-background-color: #F5F5DC;" text="Search" unFocusColor="#619fc3">
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font></JFXTextField>
+                        <MaterialDesignIconView fill="#574f4f" glyphName="ACCOUNT_SEARCH" layoutX="278.0" layoutY="52.0" size="15.0">
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </MaterialDesignIconView>
                      </children>
                   </Pane>
-                  <Label layoutX="278.0" layoutY="212.0" text="Username">
-                     <font>
-                        <Font name="Century Gothic Bold" size="18.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="278.0" layoutY="251.0" text="Statue">
+                  <Label layoutX="273.0" layoutY="234.0" text="Username">
                      <font>
                         <Font name="Century Gothic Bold" size="18.0" />
                      </font>
