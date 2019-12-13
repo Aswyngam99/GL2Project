@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="JFX-additio">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../jdk/javalib/fontawesomefx-8.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jdk/javalib/jfoenix-8.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jdk/javalib/mysql-connector-java-5.1.48.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jdk/javalib/scenebuilder-11.0.0-all.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jdk/javalib/jrt-fs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jdk/javalib/javafx-swt.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ui.Formation.Formation">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="207.0" style="-fx-background-color: #373538;">
+            <children>
+                <ImageView fitHeight="401.0" fitWidth="372.0" opacity="0.34" pickOnBounds="true">
+                    <image>
+                        <Image url="@../../Image/18695-tech-wallpaper-photoshop.jpg" />
+                    </image>
+                    <effect>
+                        <Bloom threshold="0.0" />
+                    </effect>
+                </ImageView>
+                <Label layoutX="93.0" layoutY="70.0" text="Training courses" textFill="#9dbcda">
+                    <font>
+                        <Font name="Century Gothic Bold" size="24.0" />
+                    </font>
+                    <effect>
+                        <Bloom />
+                    </effect>
+                </Label>
+                <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="135.0" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="New" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="231.0" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="Delete" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                    </font>
+                </JFXButton>
+                <MaterialDesignIconView fill="#9dbcda" glyphName="SCHOOL" layoutX="161.0" layoutY="367.0" size="50">
+                    <effect>
+                        <Glow />
+                    </effect>
+                </MaterialDesignIconView>
+                <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="183.0" onAction="#GoCour" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="Edit" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                    </font>
+                </JFXButton>
+            <MaterialDesignIconView fill="#6ca3f1" glyphName="LOGOUT" layoutX="27.0" layoutY="375.0" onMouseClicked="#GoProfil" size="30">
+               <effect>
+                  <Bloom />
+               </effect>
+            </MaterialDesignIconView>
+            <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="279.0" onAction="#GoList" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="List of student" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            </children>
+        </AnchorPane>
+        <TableView layoutX="372.0" layoutY="160.0" prefHeight="240.0" prefWidth="661.0" style="-fx-background-color: #f2ebf0;">
+            <columns>
+                <TableColumn prefWidth="363.0" text="Training course" />
+                <TableColumn minWidth="5.0" prefWidth="195.0" text="Instructor" />
+            <TableColumn prefWidth="107.0" text="Date" />
+            </columns>
+        </TableView>
+      <JFXTextField focusColor="#47677c" layoutX="397.0" layoutY="34.0" opacity="0.62" prefHeight="30.0" prefWidth="211.0" promptText="Training course name..." />
+      <JFXTextField focusColor="#47677c" layoutX="397.0" layoutY="104.0" opacity="0.62" prefHeight="30.0" prefWidth="211.0" promptText="Training course name" text="Instructor name..." />
+    </children>
+</AnchorPane>
