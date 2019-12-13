@@ -27,15 +27,13 @@ public class Formation {
         window.setScene(scene4);
         window.show();
 
-
     }
-    public void GoCour(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent c = FXMLLoader.load(getClass().getResource("../Cours/Cours.fxml"));
-        Scene scene4 = new Scene(c);
+    public void GoForm(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent liststud = FXMLLoader.load(getClass().getResource("../Form/Form.fxml"));
+        Scene scene4 = new Scene(liststud);
         Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         window.setScene(scene4);
         window.show();
-
 
     }
 }

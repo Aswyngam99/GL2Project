@@ -48,7 +48,7 @@
                         <Glow />
                     </effect>
                 </MaterialDesignIconView>
-                <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="183.0" onAction="#GoCour" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="Edit" textFill="WHITE">
+                <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="183.0" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="Edit" textFill="WHITE">
                     <font>
                         <Font name="Century Gothic Bold" size="18.0" />
                     </font>
@@ -65,7 +65,7 @@
             </JFXButton>
             </children>
         </AnchorPane>
-        <TableView layoutX="372.0" layoutY="160.0" prefHeight="240.0" prefWidth="661.0" style="-fx-background-color: #f2ebf0;">
+        <TableView layoutX="372.0" layoutY="160.0" onSort="#GoForm" prefHeight="240.0" prefWidth="661.0" style="-fx-background-color: #f2ebf0;">
             <columns>
                 <TableColumn prefWidth="363.0" text="Training course" />
                 <TableColumn minWidth="5.0" prefWidth="195.0" text="Instructor" />

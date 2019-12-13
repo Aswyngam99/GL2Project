@@ -19,7 +19,7 @@
          <children>
             <ImageView fitHeight="401.0" fitWidth="372.0" opacity="0.34" pickOnBounds="true">
                <image>
-                  <Image url="@../../Image/18695-tech-wallpaper-photoshop.jpg" />
+                  <Image url="@../Image/18695-tech-wallpaper-photoshop.jpg" />
                </image>
                <effect>
                   <Bloom threshold="0.0" />
@@ -43,7 +43,7 @@
                   <Bloom />
                </effect>
             </MaterialDesignIconView>
-            <JFXButton buttonType="RAISED" layoutX="77.0" layoutY="155.0" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="Create" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="77.0" layoutY="155.0" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="Add topic" textFill="WHITE">
                <font>
                   <Font name="Century Gothic Bold" size="18.0" />
                </font>
@@ -55,14 +55,13 @@
             </JFXButton>
          </children>
       </AnchorPane>
-      <TableView layoutX="372.0" layoutY="160.0" onSort="#GoTopic" prefHeight="241.0" prefWidth="668.0">
+      <TableView layoutX="372.0" layoutY="160.0" prefHeight="241.0" prefWidth="668.0">
          <columns>
-            <TableColumn prefWidth="243.0" text="Title" />
-            <TableColumn prefWidth="191.0" text="Creator" />
+            <TableColumn prefWidth="243.0" text="Topic" />
+            <TableColumn prefWidth="191.0" text="Author" />
             <TableColumn prefWidth="308.0" text="Date" />
          </columns>
       </TableView>
-      <JFXTextField focusColor="#47677c" layoutX="407.0" layoutY="44.0" opacity="0.62" prefHeight="30.0" prefWidth="211.0" promptText="Forum title..." />
-      <JFXTextField focusColor="#47677c" layoutX="407.0" layoutY="102.0" opacity="0.62" prefHeight="30.0" prefWidth="211.0" promptText="Instructor name..." />
+      <JFXTextField focusColor="#47677c" layoutX="402.0" layoutY="53.0" opacity="0.62" prefHeight="30.0" prefWidth="211.0" promptText="Topic title..." />
    </children>
 </AnchorPane>

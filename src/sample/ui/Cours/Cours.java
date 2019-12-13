@@ -26,18 +26,6 @@ public class Cours {
         window.setScene(scene3);
         window.show();
     }
-    public void GOtest(ActionEvent actionEvent) throws IOException {
-        Parent test = FXMLLoader.load(getClass().getResource("../Test/Test.fxml"));
-        Scene scene4 = new Scene(test);
-        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene4);
-        window.show();
-    }
-    public void GOwork(ActionEvent actionEvent) throws IOException {
-        Parent work = FXMLLoader.load(getClass().getResource("../Homework/Homework.fxml"));
-        Scene scene4 = new Scene(work);
-        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene4);
-        window.show();
-    }
+
+
 }

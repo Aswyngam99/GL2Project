@@ -30,22 +30,12 @@
             <Bloom />
          </effect>
       </Label>
-      <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="123.0" onAction="#create" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="New" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="154.0" onAction="#create" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="New" textFill="WHITE">
          <font>
             <Font name="Century Gothic Bold" size="18.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="166.0" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="Delete" textFill="WHITE">
-         <font>
-            <Font name="Century Gothic Bold" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="209.0" onAction="#GOtest" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="Test" textFill="WHITE">
-         <font>
-            <Font name="Century Gothic Bold" size="18.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="254.0" onAction="#GOwork" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="Homework" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="201.0" opacity="0.6" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: #898E8C;" text="Delete" textFill="WHITE">
          <font>
             <Font name="Century Gothic Bold" size="18.0" />
          </font>
