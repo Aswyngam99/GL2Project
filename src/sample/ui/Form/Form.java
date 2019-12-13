@@ -1,4 +1,4 @@
-package sample.Form;
+package sample.ui.Form;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;

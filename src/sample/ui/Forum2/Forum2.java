@@ -1,4 +1,4 @@
-package sample.Forum2;
+package sample.ui.Forum2;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
