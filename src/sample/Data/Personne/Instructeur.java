@@ -18,7 +18,10 @@ public class Instructeur extends Utilisateur implements PeutCommuniquer, PeutPar
   // Constructors
   //
   public Instructeur () { };
-  
+
+  public Instructeur(String login, String mdp, String addremail) {
+    super(login, mdp, addremail);
+  }
   //
   // Methods
   //

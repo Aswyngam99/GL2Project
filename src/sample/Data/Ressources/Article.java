@@ -13,12 +13,12 @@ public class Article {
   // Fields
   //
 
-  private String idArt;
+  private Integer idArt;
   private String titreArt;
   private String contenu;
   private String langue;
   private Date dateCreation;
-  private Utilisateur auteur;
+  private String auteur;
   
   //
   // Constructors
@@ -34,101 +34,54 @@ public class Article {
   // Accessor methods
   //
 
-  /**
-   * Set the value of idArt
-   * @param newVar the new value of idArt
-   */
-  private void setIdArt (String newVar) {
-    idArt = newVar;
-  }
-
-  /**
-   * Get the value of idArt
-   * @return the value of idArt
-   */
-  private String getIdArt () {
+  public Integer getIdArt() {
     return idArt;
   }
 
-  /**
-   * Set the value of titreArt
-   * @param newVar the new value of titreArt
-   */
-  private void setTitreArt (String newVar) {
-    titreArt = newVar;
+  public void setIdArt(Integer idArt) {
+    this.idArt = idArt;
   }
 
-  /**
-   * Get the value of titreArt
-   * @return the value of titreArt
-   */
-  private String getTitreArt () {
+  public String getTitreArt() {
     return titreArt;
   }
 
-  /**
-   * Set the value of contenu
-   * @param newVar the new value of contenu
-   */
-  private void setContenu (String newVar) {
-    contenu = newVar;
+  public void setTitreArt(String titreArt) {
+    this.titreArt = titreArt;
   }
 
-  /**
-   * Get the value of contenu
-   * @return the value of contenu
-   */
-  private String getContenu () {
+  public String getContenu() {
     return contenu;
   }
 
-  /**
-   * Set the value of langue
-   * @param newVar the new value of langue
-   */
-  private void setLangue (String newVar) {
-    langue = newVar;
+  public void setContenu(String contenu) {
+    this.contenu = contenu;
   }
 
-  /**
-   * Get the value of langue
-   * @return the value of langue
-   */
-  private String getLangue () {
+  public String getLangue() {
     return langue;
   }
 
-  /**
-   * Set the value of dateCreation
-   * @param newVar the new value of dateCreation
-   */
-  private void setDateCreation (Date newVar) {
-    dateCreation = newVar;
+  public void setLangue(String langue) {
+    this.langue = langue;
   }
 
-  /**
-   * Get the value of dateCreation
-   * @return the value of dateCreation
-   */
-  private Date getDateCreation () {
+  public Date getDateCreation() {
     return dateCreation;
   }
 
-  /**
-   * Set the value of auteur
-   * @param newVar the new value of auteur
-   */
-  private void setAuteur (Utilisateur newVar) {
-    auteur = newVar;
+  public void setDateCreation(Date dateCreation) {
+    this.dateCreation = dateCreation;
   }
 
-  /**
-   * Get the value of auteur
-   * @return the value of auteur
-   */
-  private Utilisateur getAuteur () {
+  public String getAuteur() {
     return auteur;
   }
+
+  public void setAuteur(String auteur) {
+    this.auteur = auteur;
+  }
+
 
   //
   // Other methods

@@ -24,7 +24,12 @@ public class Utilisateur {
   // Constructors
   //
   public Utilisateur () { };
-  
+
+  public Utilisateur(String login, String mdp, String addremail) {
+    this.login = login;
+    this.mdp = mdp;
+    this.addremail = addremail;
+  }
   //
   // Methods
   //

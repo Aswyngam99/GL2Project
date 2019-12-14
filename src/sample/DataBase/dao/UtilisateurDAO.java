@@ -11,33 +11,51 @@ import java.util.ArrayList;
 
 public class UtilisateurDAO implements DAO {
 
-    private ArrayList<Administrateur> adminlist;
+    private Administrateur admin;
     private ArrayList<Apprenant> apprenlist;
     private ArrayList<Instructeur> instrulist;
 
-    UtilisateurDAO(){
-        adminlist= new ArrayList<Administrateur>();
+    public UtilisateurDAO(){
+        admin= new Administrateur();
         apprenlist= new ArrayList<Apprenant>();
         instrulist= new ArrayList<Instructeur>();
-        getUsers();
+        extractData();
     }
 
-    void createUser(ResultSet rs){
+    void extractUser(ResultSet rs){
         Utilisateur p= new Utilisateur();
         try{
-            p.setLogin(rs.getString("login"));
-            p.setMdp(rs.getString("mdp"));
-            p.setAddremail(rs.getString("addremail"));
-            p.setPhotoDP(rs.getString("pdp"));
-            p.setLangue(rs.getString("langue"));
-            p.setFh(rs.getInt("fh"));
             String type= rs.getString("type");
             switch (type){
-                case "admin" : adminlist.add((Administrateur) p);
+                case "admin" :
+                    Administrateur adm= new Administrateur();
+                    adm.setLogin(rs.getString("login"));
+                    adm.setMdp(rs.getString("mdp"));
+                    adm.setAddremail(rs.getString("addremail"));
+                    adm.setPhotoDP(rs.getString("pdp"));
+                    adm.setLangue(rs.getString("langue"));
+                    adm.setFh(rs.getInt("fh"));
+                    admin=adm;
                     break;
-                case "apprenant" : apprenlist.add((Apprenant) p);
+                case "apprenant" :
+                    Apprenant appr= new Apprenant();
+                    appr.setLogin(rs.getString("login"));
+                    appr.setMdp(rs.getString("mdp"));
+                    appr.setAddremail(rs.getString("addremail"));
+                    appr.setPhotoDP(rs.getString("pdp"));
+                    appr.setLangue(rs.getString("langue"));
+                    appr.setFh(rs.getInt("fh"));
+                    apprenlist.add(appr);
                     break;
-                case "instructeur" : instrulist.add((Instructeur)p);
+                case "instructeur" :
+                    Instructeur ins= new Instructeur();
+                    ins.setLogin(rs.getString("login"));
+                    ins.setMdp(rs.getString("mdp"));
+                    ins.setAddremail(rs.getString("addremail"));
+                    ins.setPhotoDP(rs.getString("pdp"));
+                    ins.setLangue(rs.getString("langue"));
+                    ins.setFh(rs.getInt("fh"));
+                    instrulist.add(ins);
                     break;
             }
         }catch (SQLException e){
@@ -45,7 +63,7 @@ public class UtilisateurDAO implements DAO {
         }
     }
 
-    void getUsers(){
+    void extractData(){
         String requete="select * from Utilisateur order by login";
         try {
             Class.forName(DRIVER);
@@ -55,12 +73,24 @@ public class UtilisateurDAO implements DAO {
             ResultSet rs= statement.executeQuery(requete);
 
             while (rs.next()){
-                createUser(rs);
+                extractUser(rs);
             }
             rs.close();
             con.close();
         }catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public Administrateur getAdmin() {
+        return admin;
+    }
+
+    public ArrayList<Apprenant> getApprenlist() {
+        return apprenlist;
+    }
+
+    public ArrayList<Instructeur> getInstrulist() {
+        return instrulist;
     }
 }

@@ -23,8 +23,8 @@
       </ImageView>
       <AnchorPane layoutX="36.0" layoutY="29.0" opacity="0.49" prefHeight="343.0" prefWidth="320.0" style="-fx-background-color: C0C0C0;">
          <children>
-            <JFXTextField focusColor="#657182" layoutX="40.0" layoutY="99.0" prefHeight="25.0" prefWidth="240.0" promptText="Enter your username..." />
-            <JFXPasswordField focusColor="#657182" layoutX="40.0" layoutY="172.0" prefHeight="25.0" prefWidth="240.0" promptText="Enter your password..." />
+            <JFXTextField fx:id="username" focusColor="#657182" layoutX="40.0" layoutY="99.0" prefHeight="25.0" prefWidth="240.0" promptText="Enter your username..." />
+            <JFXPasswordField fx:id="password" focusColor="#657182" layoutX="40.0" layoutY="172.0" prefHeight="25.0" prefWidth="240.0" promptText="Enter your password..." />
             <JFXButton buttonType="RAISED" layoutX="144.0" layoutY="244.0" onAction="#GoLogin" prefHeight="37.0" prefWidth="136.0" style="-fx-background-color: #696969;" text="Login" textFill="WHITE">
                <font>
                   <Font name="Century Gothic Bold" size="14.0" />

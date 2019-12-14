@@ -17,7 +17,10 @@ public class Apprenant extends Utilisateur implements PeutCommuniquer, PeutParti
   // Constructors
   //
   public Apprenant () { };
-  
+
+  public Apprenant(String login, String mdp, String addremail) {
+    super(login, mdp, addremail);
+  }
   //
   // Methods
   //
