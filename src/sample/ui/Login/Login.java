@@ -45,9 +45,9 @@ public class Login implements Initializable {
         if(Main.getAlldata().authentification(username.getText(), password.getText())!=0) {
             Main.setLogin(username.getText());
             Main.setType(Main.getAlldata().authentification(username.getText(), password.getText()));
-            System.out.println(Main.getType());
 
-            Parent profil = FXMLLoader.load(getClass().getResource("../LProfil/LProfil.fxml"));
+            Parent profil = FXMLLoader.load(getClass().getResource("" +
+                    ""));
             Scene scene3 = new Scene(profil, 930, 630);
             Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             window.setX(220);

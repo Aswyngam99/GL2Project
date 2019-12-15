@@ -4,11 +4,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class ListStudent {
+    public TableView tableau;
+    public TableColumn log;
+
     public void GoFormation(javafx.scene.input.MouseEvent mouseEvent) throws IOException {
         //RETURN TO MENU
         Parent profil = FXMLLoader.load(getClass().getResource("../Formation/Formation.fxml"));

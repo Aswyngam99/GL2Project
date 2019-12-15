@@ -20,6 +20,7 @@ public class Main extends Application {
 
     private static AllDataFromDB alldata;
     private static String login;
+    private static String urlim;
     private static int type;
 
 
@@ -42,6 +43,23 @@ public class Main extends Application {
 
 
 
+        public static void inscription(String username, String password, String email, int type){
+                Main.getAlldata().inscription(username, password, email, type);
+                login=username;
+                setType(type);
+        }
+
+        public static void nouvelarticle(String titre, String contenu, int type){
+            alldata.newArticle(titre, contenu, type);
+        }
+
+    public static String getUrlim() {
+        return urlim;
+    }
+
+    public static void setUrlim(String urlim) {
+        Main.urlim = urlim;
+    }
 
     public static AllDataFromDB getAlldata() {
         return alldata;
@@ -67,5 +85,3 @@ public class Main extends Application {
         Main.type = type;
     }
 }
-
-

@@ -1,15 +1,27 @@
 package sample.ui.LProfil;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import sample.Main;
 
 import java.io.IOException;
 
 public class LProfil {
+
+    public Label username;
+    public Image pdp;
+
+    @FXML
+    void onAction(ActionEvent event) {
+        username.setText(Main.getLogin());
+    }
 
     public void GoTraining(javafx.event.ActionEvent actionEvent) throws IOException {
         // IF IT's an INSTRUCTOR

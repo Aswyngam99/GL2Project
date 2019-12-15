@@ -110,7 +110,7 @@
                         </ImageView>
                         <ImageView fitHeight="185.0" fitWidth="204.0" layoutX="54.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../Image/loonapix_1574951266125445344.png" />
+                              <Image fx:id="pdp" url="@../../Image/loonapix_1574951266125445344.png" />
                            </image></ImageView>
                         <MaterialDesignIconView fill="#6ca3f1" glyphName="PLUS_CIRCLE" layoutX="193.0" layoutY="291.0" size="35">
                            <effect>
@@ -143,7 +143,7 @@
                         </MaterialDesignIconView>
                      </children>
                   </Pane>
-                  <Label layoutX="273.0" layoutY="234.0" text="Username">
+                  <Label fx:id="username" layoutX="273.0" layoutY="234.0" text="Username">
                      <font>
                         <Font name="Century Gothic Bold" size="18.0" />
                      </font>

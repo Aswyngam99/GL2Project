@@ -82,6 +82,19 @@ public class UtilisateurDAO implements DAO {
         }
     }
 
+    public void inscription(String login, String mdp, String email, String sqlquerry){
+        try {
+            Class.forName(DRIVER);
+
+            Connection con= DriverManager.getConnection(DB_URL, USER, PASS);
+            Statement statement= con.createStatement();
+            statement.executeUpdate(sqlquerry);
+
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     public Administrateur getAdmin() {
         return admin;
     }

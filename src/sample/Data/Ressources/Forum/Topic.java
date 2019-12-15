@@ -17,7 +17,10 @@ public class Topic extends Article {
   // Constructors
   //
   public Topic () { };
-  
+
+  public Topic(String titreArt, String contenu, String auteur) {
+    super(titreArt, contenu, auteur);
+  }
   //
   // Methods
   //

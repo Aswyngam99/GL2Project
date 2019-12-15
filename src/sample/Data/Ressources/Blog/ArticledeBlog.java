@@ -17,7 +17,10 @@ public class ArticledeBlog extends Article {
   // Constructors
   //
   public ArticledeBlog () { };
-  
+
+  public ArticledeBlog(String titreArt, String contenu, String auteur) {
+    super(titreArt, contenu, auteur);
+  }
   //
   // Methods
   //

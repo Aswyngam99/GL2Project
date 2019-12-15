@@ -24,7 +24,12 @@ public class Article {
   // Constructors
   //
   public Article () { };
-  
+
+  public Article(String titreArt, String contenu, String auteur) {
+    this.titreArt = titreArt;
+    this.contenu = contenu;
+    this.auteur = auteur;
+  }
   //
   // Methods
   //

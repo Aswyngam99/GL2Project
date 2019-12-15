@@ -57,7 +57,8 @@ public class ArticleDAO implements DAO {
                     topic.setDateCreation(rs.getDate("date"));
                     topic.setAuteur(rs.getString("auteur"));
 
-                    listtopics.add(topic);
+                    listtopics.add(topic)
+                    ;
                     break;
             }
         } catch (SQLException e) {
@@ -81,6 +82,19 @@ public class ArticleDAO implements DAO {
             rs.close();
             con.close();
         }catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void newArticle(String titre, String contenu, String sqlquerry){
+        try {
+            Class.forName(DRIVER);
+
+            Connection con= DriverManager.getConnection(DB_URL, USER, PASS);
+            Statement statement= con.createStatement();
+            statement.executeUpdate(sqlquerry);
+
+        } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
     }

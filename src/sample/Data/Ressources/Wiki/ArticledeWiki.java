@@ -17,7 +17,10 @@ public class ArticledeWiki extends Article {
   // Constructors
   //
   public ArticledeWiki () { };
-  
+
+  public ArticledeWiki(String titreArt, String contenu, String auteur) {
+    super(titreArt, contenu, auteur);
+  }
   //
   // Methods
   //

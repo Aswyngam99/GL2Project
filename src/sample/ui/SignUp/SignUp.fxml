@@ -25,7 +25,7 @@
             <Bloom threshold="0.2" />
          </effect>
       </ImageView>
-      <JFXButton buttonType="RAISED" layoutX="532.0" layoutY="352.0" opacity="0.45" prefHeight="35.0" prefWidth="147.0" style="-fx-background-color: #708090;" text="Submit" textFill="#ebedee">
+      <JFXButton buttonType="RAISED" layoutX="532.0" layoutY="352.0" opacity="0.45" prefHeight="35.0" prefWidth="147.0" style="-fx-background-color: #708090;" text="Submit" textFill="#ebedee" onMouseClicked="#sinscrire">
          <font>
             <Font name="Century Gothic Bold" size="14.0" />
          </font>
@@ -50,17 +50,17 @@
                   <Font name="Century Gothic" size="12.0" />
                </font>
             </JFXTextField>
-            <JFXTextField focusColor="#3391a4" layoutX="20.0" layoutY="104.0" prefHeight="25.0" prefWidth="203.0" promptText="Email" unFocusColor="#848990">
+            <JFXTextField fx:id="email" focusColor="#3391a4" layoutX="20.0" layoutY="104.0" prefHeight="25.0" prefWidth="203.0" promptText="Email" unFocusColor="#848990">
                <font>
                   <Font name="Century Gothic" size="12.0" />
                </font>
             </JFXTextField>
-            <JFXPasswordField focusColor="#3391a4" layoutX="353.0" layoutY="104.0" prefHeight="25.0" prefWidth="203.0" promptText="Password" unFocusColor="#848990">
+            <JFXPasswordField fx:id="password" focusColor="#3391a4" layoutX="353.0" layoutY="104.0" prefHeight="25.0" prefWidth="203.0" promptText="Password" unFocusColor="#848990">
                <font>
                   <Font name="Century Gothic" size="12.0" />
                </font>
             </JFXPasswordField>
-            <JFXRadioButton layoutX="485.0" layoutY="210.0" selected="true" text="Learner" textFill="#042e3c">
+            <JFXRadioButton fx:id="learner" layoutX="485.0" layoutY="210.0" selected="true" text="Learner" textFill="#042e3c">
                <font>
                   <Font name="Century Gothic" size="12.0" />
                </font>
@@ -71,7 +71,7 @@
                   <Glow />
                </effect>
             </JFXRadioButton>
-            <JFXRadioButton layoutX="353.0" layoutY="210.0" text="Instructor" textFill="#042e3c" toggleGroup="$Group">
+            <JFXRadioButton fx:id="instit" layoutX="353.0" layoutY="210.0" text="Instructor" textFill="#042e3c" toggleGroup="$Group">
                <font>
                   <Font name="Century Gothic" size="12.0" />
                </font>
@@ -79,7 +79,7 @@
                   <Glow />
                </effect>
             </JFXRadioButton>
-            <JFXTextField focusColor="#3391a4" layoutX="353.0" layoutY="25.0" prefHeight="25.0" prefWidth="203.0" promptText="Username" unFocusColor="#848990">
+            <JFXTextField fx:id="username" focusColor="#3391a4" layoutX="353.0" layoutY="25.0" prefHeight="25.0" prefWidth="203.0" promptText="Username" unFocusColor="#848990">
                <font>
                   <Font name="Century Gothic" size="12.0" />
                </font>
